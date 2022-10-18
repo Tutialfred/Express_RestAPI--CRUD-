@@ -69,7 +69,3 @@ app.get("/products/:id", (req, res) => {
 
 app.listen(port);
 console.log(`Server on port ${port}`);
-
-
-// 🔥 02:41
-// 📀 Express setting
