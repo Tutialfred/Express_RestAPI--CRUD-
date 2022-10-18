@@ -34,7 +34,7 @@ app.put("/products/:id", (req, res) => {
 
     // Actualizar producto 'newData' → lo que le enviamos
     products = products.map(e => e.id === parseInt(req.params.id) ? {...e, ...newData} : e)
-    res.send("PRODUCTS UPDATING ✔")                           //Actualizar ↑     Conservar ↑ el producto    
+    res.send("PRODUCTS UPDATING ✔")                         //Actualizar ↑     Conservar ↑ el producto    
 });
 
 app.delete("/products/:id", (req, res) => {
